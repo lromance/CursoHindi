@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gramática Completa de Hindi (Nivel A1)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        h1 { font-size: 2.5em; text-align: center; border: none; }
+        h2 { font-size: 2em; margin-top: 40px; }
+        h3 { font-size: 1.5em; border-bottom: 1px solid #ccc; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        code, .hindi {
+            font-family: "Noto Sans Devanagari", "Arial Unicode MS", sans-serif;
+            background-color: #ecf0f1;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-size: 1.1em;
+        }
+        .nota, .clarificacion {
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+            margin: 20px 0;
+            padding: 15px;
+        }
+        .nota h4, .clarificacion h4 {
+            margin-top: 0;
+            color: #1a73e8;
+            border: none;
+        }
+        .regla-oro {
+            background-color: #fffbe6;
+            border-left: 6px solid #ffc107;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Gramática Completa de Hindi (Nivel A1, Unidades 1-12)</h1>
+
+    <!-- UNIDAD 1: CONTENIDO AMPLIADO -->
+    <h2>Unidad 1: Fundamentos del Devanagari</h2>
+    
+    <h3>1. Conceptos Clave de Escritura</h3>
+    <ul>
+        <li><strong>Shirorekha (<span class="hindi">शिरोरेखा</span>):</strong> Es la línea horizontal superior de la que "cuelgan" las letras. Se escribe de izquierda a derecha y, crucialmente, se traza <strong>después</strong> de haber escrito la palabra completa.</li>
+        <li><strong>Vocal Inherente (<span class="hindi">अ</span> 'a'):</strong> Este es el concepto más importante del devanagari. Cada consonante (p. ej., <span class="hindi">क</span>) se considera una sílaba completa que ya incluye el sonido de la vocal 'a' corta (schwa).
+            <ul>
+                <li><span class="hindi">क</span> no es el sonido 'k', se lee como 'ka'.</li>
+                <li><span class="hindi">म</span> no es el sonido 'm', se lee como 'ma'.</li>
+                <li><span class="hindi">न</span> no es el sonido 'n', se lee como 'na'.</li>
+            </ul>
+        </li>
+        <div class="clarificacion">
+            <h4>Nota del Profesor: La Vocal Inherente 'a' (Schwa)</h4>
+            <p>El error más común es pronunciar esta 'a' como la 'a' española de "casa". En realidad, es un sonido muy corto y neutro, similar a la 'a' en la palabra inglesa "<strong>a</strong>go" o "sof<strong>a</strong>". Es el sonido vocálico más relajado y por defecto del hindi.</p>
+        </div>
+        <li><strong>Halant (<span class="hindi">हलन्त</span>):</strong> Es un pequeño trazo diagonal (<span class="hindi">्</span>) que se coloca debajo de una consonante. Su única función es <strong>cancelar</strong> la vocal inherente 'a', dejando la consonante "pura".
+            <ul>
+                <li><span class="hindi">क</span> = ka (consonante + vocal inherente)</li>
+                <li><span class="hindi">क्</span> = k (solo el sonido consonántico 'k')</li>
+                <li>Se usa principalmente para formar grupos de consonantes (ligaduras), como veremos más adelante. Ej: <span class="hindi">नमस्ते</span> (namaste) se forma de <span class="hindi">न + म + स् + ते</span>.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>2. Matras (Signos Vocálicos)</h3>
+    <p>Cuando queremos usar una vocal <strong>diferente</strong> de la 'a' inherente, no escribimos la letra vocal completa (excepto al inicio de palabra). En su lugar, usamos un signo diacrítico llamado <strong>Matra (<span class="hindi">मात्रा</span>)</strong>, que se adjunta a la consonante anterior.</p>
+    <table>
+        <thead>
+            <tr><th>Vocal (Forma Plena)</th><th>Matra (Símbolo)</th><th>Ejemplo con <span class="hindi">क</span> (ka)</th><th>Transliteración</th><th>Nota de Pronunciación</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>(Sin vocal)</td><td><span class="hindi">्</span> (halant)</td><td><span class="hindi">क्</span></td><td>k</td><td>Consonante pura</td></tr>
+            <tr><td><span class="hindi">अ</span> (a)</td><td>(Ninguna)</td><td><span class="hindi">क</span></td><td>ka</td><td>Vocal 'a' corta y neutra (schwa)</td></tr>
+            <tr><td><span class="hindi">आ</span> (aa)</td><td><span class="hindi">ा</span></td><td><span class="hindi">का</span></td><td>kā</td><td>'a' larga y abierta, como en "c<strong>a</strong>sa"</td></tr>
+            <tr><td><span class="hindi">इ</span> (i)</td><td><span class="hindi">ि</span></td><td><span class="hindi">कि</span></td><td>ki</td><td>'i' corta, como en "s<strong>i</strong>"</td></tr>
+            <tr><td><span class="hindi">ई</span> (ii)</td><td><span class="hindi">ी</span></td><td><span class="hindi">की</span></td><td>kī</td><td>'i' larga, como en "s<strong>í</strong>"</td></tr>
+            <tr><td><span class="hindi">उ</span> (u)</td><td><span class="hindi">ु</span></td><td><span class="hindi">कु</span></td><td>ku</td><td>'u' corta, como en "t<strong>u</strong>"</td></tr>
+            <tr><td><span class="hindi">ऊ</span> (uu)</td><td><span class="hindi">ू</span></td><td><span class="hindi">कू</span></td><td>kū</td><td>'u' larga, como en "t<strong>ú</strong>"</td></tr>
+            <tr><td><span class="hindi">ऋ</span> (ri)</td><td><span class="hindi">ृ</span></td><td><span class="hindi">कृ</span></td><td>kṛ</td><td>Como 'ri' en "c<strong>ri</strong>sis"</td></tr>
+            <tr><td><span class="hindi">ए</span> (e)</td><td><span class="hindi">े</span></td><td><span class="hindi">के</span></td><td>ke</td><td>'e' cerrada, como en "qu<strong>é</strong>" (nunca abierta)</td></tr>
+            <tr><td><span class="hindi">ऐ</span> (ai)</td><td><span class="hindi">ै</span></td><td><span class="hindi">कै</span></td><td>kai</td><td>Como en "<strong>ai</strong>re"</td></tr>
+            <tr><td><span class="hindi">ओ</span> (o)</td><td><span class="hindi">ो</span></td><td><span class="hindi">को</span></td><td>ko</td><td>'o' cerrada, como en "t<strong>o</strong>rpe"</td></tr>
+            <tr><td><span class="hindi">औ</span> (au)</td><td><span class="hindi">ौ</span></td><td><span class="hindi">कौ</span></td><td>kau</td><td>Como en "p<strong>au</strong>sa"</td></tr>
+        </tbody>
+    </table>
+
+    <h3>3. Fonética: Aspiración</h3>
+    <p>La fonética hindi distingue entre sonidos <strong>sin aspirar</strong> (sin soplo de aire) y <strong>aspirados</strong> (con un soplo de aire). Esta diferencia es crucial para el significado de las palabras.</p>
+    <ul>
+        <li><strong>Sin aspirar:</strong> <span class="hindi">क</span> (k), <span class="hindi">ग</span> (g), <span class="hindi">च</span> (c), <span class="hindi">ज</span> (j), <span class="hindi">ट</span> (ʈ), <span class="hindi">ड</span> (ɖ), <span class="hindi">त</span> (t), <span class="hindi">द</span> (d), <span class="hindi">प</span> (p), <span class="hindi">ब</span> (b)</li>
+        <li><strong>Aspirados:</strong> <span class="hindi">ख</span> (kh), <span class="hindi">घ</span> (gh), <span class="hindi">छ</span> (ch), <span class="hindi">झ</span> (jh), <span class="hindi">ठ</span> (ʈh), <span class="hindi">ढ</span> (ɖh), <span class="hindi">थ</span> (th), <span class="hindi">ध</span> (dh), <span class="hindi">फ</span> (ph), <span class="hindi">भ</span> (bh)</li>
+    </ul>
+    <div class="nota">
+        <h4>Consejo Práctico: Sentir la Aspiración</h4>
+        <p>Para sentir la diferencia, pon la palma de tu mano frente a tu boca. Al decir una consonante aspirada como <span class="hindi">ख</span> (kh), deberías sentir un claro soplo de aire. Al decir una sin aspirar como <span class="hindi">क</span> (k), apenas deberías sentirlo. ¡Inténtalo!</p>
+    </div>
+
+    <h3>4. Componente Cultural: <span class="hindi">जी</span> (Jī)</h3>
+    <p><span class="hindi">जी</span> (Jī) es una partícula de respeto fundamental en hindi. No tiene una traducción directa, pero añade un sentido de cortesía y respeto. Se puede usar de varias formas:</p>
+    <ul>
+        <li>Después de un nombre: <span class="hindi">राहुल जी</span> (Rahul-jī)</li>
+        <li>Después de "sí" o "no": <span class="hindi">जी हाँ</span> (Jī hān - Sí, con respeto), <span class="hindi">जी नहीं</span> (Jī nahin - No, con respeto).</li>
+        <li>Solo, como respuesta para decir "¿Sí?" o "Dígame" de forma educada.</li>
+    </ul>
+
+    <!-- UNIDAD 2: CONTENIDO AMPLIADO -->
+    <h2>Unidad 2: Oraciones Básicas (Ser/Estar)</h2>
+    
+    <h3>1. Pronombres Personales</h3>
+    <p>La elección del pronombre depende del nivel de formalidad, algo muy importante en la cultura india.</p>
+    <table>
+        <thead><tr><th>Hindi</th><th>Transliteración</th><th>Español</th><th>Nivel de Formalidad y Uso</th></tr></thead>
+        <tbody>
+            <tr><td><span class="hindi">मैं</span></td><td>main</td><td>Yo</td><td>(Para todos)</td></tr>
+            <tr><td><span class="hindi">तू</span></td><td>tū</td><td>Tú</td><td><strong>(Íntimo/Muy Informal)</strong> Se usa con niños, en relaciones muy cercanas, a veces en rezos a Dios, o puede ser rudo si se usa incorrectamente. <strong>Recomendación: Evitarlo al principio.</strong></td></tr>
+            <tr><td><span class="hindi">तुम</span></td><td>tum</td><td>Tú / Vosotros</td><td><strong>(Informal Estándar)</strong> El más común entre amigos, familia y gente de edad similar. Es el "tú" de confianza.</td></tr>
+            <tr><td><span class="hindi">आप</span></td><td>āp</td><td>Usted / Ustedes</td><td><strong>(Formal)</strong> Se usa con extraños, gente mayor, en contextos profesionales y para mostrar respeto. Siempre es la opción segura.</td></tr>
+            <tr><td><span class="hindi">यह</span></td><td>yah</td><td>Él / Ella / Esto</td><td><strong>(Cercano/Proximal)</strong> Se refiere a alguien o algo que está cerca del hablante. "Este / Esta".</td></tr>
+            <tr><td><span class="hindi">वह</span></td><td>vah</td><td>Él / Ella / Aquello</td><td><strong>(Lejano/Distal)</strong> Se refiere a alguien o algo que está lejos del hablante. "Ese / Esa / Aquel / Aquella".</td></tr>
+            <tr><td><span class="hindi">हम</span></td><td>ham</td><td>Nosotros / Nosotras</td><td>(Para todos)</td></tr>
+            <tr><td><span class="hindi">ये</span></td><td>ye</td><td>Ellos / Ellas / Estos</td><td><strong>(Cercano/Proximal)</strong> Plural de <span class="hindi">यह</span>.</td></tr>
+            <tr><td><span class="hindi">वे</span></td><td>ve</td><td>Ellos / Ellas / Aquellos</td><td><strong>(Lejano/Distal)</strong> Plural de <span class="hindi">वह</span>.</td></tr>
+        </tbody>
+    </table>
+
+    <h3>2. Verbo 'Ser/Estar' (<span class="hindi">होना</span> - honā) en Presente</h3>
+    <p>Es el verbo más importante para empezar. Se usa para identidad, estado o existencia y concuerda con el pronombre sujeto.</p>
+    <table>
+        <thead><tr><th>Pronombre</th><th>Verbo 'Ser'</th><th>Transliteración</th><th>Ejemplo Completo</th></tr></thead>
+        <tbody>
+            <tr><td><span class="hindi">मैं</span> (Main)</td><td><span class="hindi">हूँ</span> (huun)</td><td>hū̃</td><td><span class="hindi">मैं विद्यार्थी हूँ।</span> (Main vidyaarthii huun. - Soy estudiante.)</td></tr>
+            <tr><td><span class="hindi">तू</span> (Tū)</td><td><span class="hindi">है</span> (hai)</td><td>hai</td><td><span class="hindi">तू अच्छा है।</span> (Tū achchhaa hai. - Eres bueno.)</td></tr>
+            <tr><td><span class="hindi">तुम</span> (Tum)</td><td><span class="hindi">हो</span> (ho)</td><td>ho</td><td><span class="hindi">तुम कौन हो?</span> (Tum kaun ho? - ¿Quién eres?)</td></tr>
+            <tr><td><span class="hindi">आप</span> (Āp)</td><td><span class="hindi">हैं</span> (hain)</td><td>ha̱</td><td><span class="hindi">आप अध्यापक हैं।</span> (Āp adhyaapak hain. - Ud. es profesor.)</td></tr>
+            <tr><td><span class="hindi">यह/वह</span> (Yah/Vah)</td><td><span class="hindi">है</span> (hai)</td><td>hai</td><td><span class="hindi">यह मेरी बहन है।</span> (Yah merii bahan hai. - Ella es mi hermana.)</td></tr>
+            <tr><td><span class="hindi">हम</span> (Ham)</td><td><span class="hindi">हैं</span> (hain)</td><td>ha̱</td><td><span class="hindi">हम दोस्त हैं।</span> (Ham dost hain. - Somos amigos.)</td></tr>
+            <tr><td><span class="hindi">ये/वे</span> (Ye/Ve)</td><td><span class="hindi">हैं</span> (hain)</td><td>ha̱</td><td><span class="hindi">वे मेरे पिता हैं।</span> (Ve mere pitaa hain. - Él (formal) es mi padre.)</td></tr>
+        </tbody>
+    </table>
+    <div class="clarificacion">
+        <h4>Nota Clave de Pronunciación: <span class="hindi">है</span> (hai) vs. <span class="hindi">हैं</span> (hain)</h4>
+        <p>La única diferencia es la <strong>nasalización</strong>, indicada por el punto (<em>bindi</em>) sobre <span class="hindi">हैं</span>. Este pequeño detalle es crucial para el significado y la correcta gramática.</p>
+        <ul>
+            <li><span class="hindi">है</span> (hai): Es <strong>singular</strong>. Se usa con <span class="hindi">तू, यह, वह</span>.</li>
+            <li><span class="hindi">हैं</span> (hain): Es <strong>plural O singular formal</strong>. Se usa con <span class="hindi">हम, आप, ये, वे</span>. Usar <span class="hindi">हैं</span> con <span class="hindi">आप</span> es una forma de mostrar respeto.</li>
+        </ul>
+    </div>
+
+    <h3>3. Género (Masculino y Femenino)</h3>
+    <p>En hindi, todos los sustantivos tienen género (masculino o femenino), y no hay género neutro. El género es fundamental y afecta a los adjetivos y, como veremos, a los verbos.</p>
+    <ul>
+        <li><strong>Regla General (muy útil para empezar):</strong>
+            <ul>
+                <li>Sustantivos y adjetivos <strong>Masculinos</strong> a menudo terminan en <span class="hindi">-आ</span> (-aa). Ej: <span class="hindi">लड़का</span> (laRkaa - chico), <span class="hindi">अच्छा</span> (achchhaa - bueno).</li>
+                <li>Sustantivos y adjetivos <strong>Femeninos</strong> a menudo terminan en <span class="hindi">-ई</span> (-ii). Ej: <span class="hindi">लड़की</span> (laRkii - chica), <span class="hindi">अच्छी</span> (achchhii - buena).</li>
+            </ul>
+        </li>
+        <li><strong>Concordancia:</strong> El adjetivo debe concordar en género con el sustantivo al que describe.
+            <ul>
+                <li>Un buen chico: <span class="hindi">अच्छा लड़का</span> (achchhaa laRkaa)</li>
+                <li>Una buena chica: <span class="hindi">अच्छी लड़की</span> (achchhii laRkii)</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>4. Estructura de la Frase: S-O-V (Sujeto - Objeto - Verbo)</h3>
+    <p>A diferencia del español (S-V-O), el orden estándar en hindi es <strong>Sujeto - Objeto - Verbo (S-O-V)</strong>. El verbo <strong>siempre</strong> va al final de la cláusula.</p>
+    <div class="nota">
+        <p><strong>Español:</strong> Yo (S) soy (V) un profesor (O).</p>
+        <p><strong>Hindi:</strong> <span class="hindi">मैं (S) अध्यापक (O) हूँ (V)।</span> (Main adhyaapak huun.)</p>
+    </div>
+
+    <!-- UNIDAD 3: CONTENIDO AMPLIADO -->
+    <h2>Unidad 3: Conexiones y Casos</h2>
+
+    <h3>1. Posesivos (Adjetivos)</h3>
+    <p>Los posesivos en hindi funcionan como adjetivos. Por lo tanto, concuerdan en género y número con el <strong>objeto poseído</strong>, no con el poseedor (como en español).</p>
+    <ul>
+        <li>Forma base Masculina: <span class="hindi">-रा</span> (-raa) o <span class="hindi">-का</span> (-kaa)</li>
+        <li>Forma base Femenina: <span class="hindi">-री</span> (-rii) o <span class="hindi">-की</span> (-kii)</li>
+        <li>Forma base Oblicua/Masc. Plural: <span class="hindi">-रे</span> (-re) o <span class="hindi">-के</span> (-ke)</li>
+    </ul>
+    <table>
+        <thead><tr><th>Pronombre</th><th>Posesivo Masc.</th><th>Posesivo Fem.</th><th>Ejemplo</th></tr></thead>
+        <tbody>
+            <tr><td><span class="hindi">मैं</span> (Yo)</td><td><span class="hindi">मेरा</span> (meraa)</td><td><span class="hindi">मेरी</span> (merii)</td><td><span class="hindi">मेरा घर</span> (meraa ghar - mi casa), <span class="hindi">मेरी गाड़ी</span> (merii gaaRii - mi coche)</td></tr>
+            <tr><td><span class="hindi">तुम</span> (Tú)</td><td><span class="hindi">तुम्हारा</span> (tumhaaraa)</td><td><span class="hindi">तुम्हारी</span> (tumhaarii)</td><td><span class="hindi">तुम्हारा भाई</span> (tumhaaraa bhaaii - tu hermano)</td></tr>
+            <tr><td><span class="hindi">आप</span> (Ud.)</td><td><span class="hindi">आपका</span> (aapkaa)</td><td><span class="hindi">आपकी</span> (aapki)</td><td><span class="hindi">आपका नाम</span> (aapkaa naam - su nombre)</td></tr>
+            <tr><td><span class="hindi">हम</span> (Nos.)</td><td><span class="hindi">हमारा</span> (hamaaraa)</td><td><span class="hindi">हमारी</span> (hamaarii)</td><td><span class="hindi">हमारा देश</span> (hamaaraa desh - nuestro país)</td></tr>
+            <tr><td><span class="hindi">यह</span> (Él/Ella)</td><td><span class="hindi">इसका</span> (iskaa)</td><td><span class="hindi">इसकी</span> (iskii)</td><td><span class="hindi">इसका नाम</span> (iskaa naam - el nombre de él/ella)</td></tr>
+            <tr><td><span class="hindi">वह</span> (Él/Ella)</td><td><span class="hindi">उसका</span> (uskaa)</td><td><span class="hindi">उसकी</span> (uskii)</td><td><span class="hindi">उसका कुत्ता</span> (uskaa kuttaa - su perro)</td></tr>
+            <tr><td><span class="hindi">ये</span> (Ellos/as)</td><td><span class="hindi">इनका</span> (inkaa)</td><td><span class="hindi">इनकी</span> (inkii)</td><td><span class="hindi">इनका घर</span> (inkaa ghar - la casa de ellos/as)</td></tr>
+    </table>
+
+    <h3>2. Posesivo Reflexivo: 'apnā' (अपना)</h3>
+    <div class="clarificacion">
+        <h4>Nota del Profesor: El Posesivo Universal</h4>
+        <p>Cuando el sujeto de una oración es también el poseedor de algo en esa misma oración, se utiliza el pronombre posesivo reflexivo <strong>अपना (apnā)</strong> en lugar del posesivo normal (merā, tumhārā, etc.). 'Apnā' se declina como un adjetivo terminado en '-ā' para concordar con el objeto poseído.</p>
+        <p><strong>Regla:</strong> Si el sujeto es 'Yo', 'Tú', 'Él', 'Ella', 'Nosotros', etc., y está hablando de algo que le pertenece, siempre usará 'apnā'.</p>
+        <ul>
+            <li><span class="hindi">मैं अपनी किताब पढ़ता हूँ।</span> (Main apnii kitaab paRhtaa huun.) - Yo leo <strong>mi</strong> libro. (No 'merii kitaab')</li>
+            <li><span class="hindi">तुम अपना काम करो।</span> (Tum apnaa kaam karo.) - Tú haz <strong>tu</strong> trabajo. (No 'tumhaaraa kaam')</li>
+            <li><span class="hindi">वह अपने घर में है।</span> (Vah apne ghar men hai.) - Él está en <strong>su</strong> (propia) casa. (No 'uske ghar')</li>
+        </ul>
+    </div>
+
+    <h3>3. Postposiciones</h3>
+    <p>En lugar de preposiciones (que van <strong>antes</strong> del sustantivo), el hindi usa <strong>postposiciones</strong> (que van <strong>después</strong> del sustantivo).</p>
+    <ul>
+        <li><span class="hindi">में</span> (men): en, dentro de. Ejemplo: <span class="hindi">घर में</span> (ghar men - en la casa)</li>
+        <li><span class="hindi">पर</span> (par): sobre, encima de. Ejemplo: <span class="hindi">मेज़ पर</span> (mez par - sobre la mesa)</li>
+        <li><span class="hindi">को</span> (ko): a (indica objeto indirecto o, a veces, objeto directo específico). Ejemplo: <span class="hindi">राम को दो</span> (Ram ko do - Dale a Ram)</li>
+    </ul>
+
+    <h3>4. Caso Oblicuo</h3>
+    <div class="regla-oro">
+        <h4>Regla de Oro: El Caso Oblicuo</h4>
+        <p>Cuando un sustantivo o pronombre va seguido de una <strong>postposición</strong> (como <span class="hindi">में, पर, को</span>), casi siempre debe cambiar a su forma <strong>"Oblicua"</strong>.</p>
+        <p><strong>Analogía:</strong> Piensa que las postposiciones son como "mochilas". Para poder llevar una mochila, la palabra necesita cambiar a una forma más fuerte y estable: la forma oblicua. Es la forma que adopta una palabra para poder recibir una postposición.</p>
+    </div>
+
+    <h4>A. Pronombres en Oblicuo:</h4>
+    <table>
+        <thead><tr><th>Nominativo</th><th>Oblicuo</th><th>Transliteración</th><th>Ejemplo con Postposición</th></tr></thead>
+        <tbody>
+            <tr><td><span class="hindi">मैं</span> (Main)</td><td><span class="hindi">मुझ</span> (Mujh)</td><td>mujh</td><td><span class="hindi">मुझ पर</span> (Mujh par - Sobre mí)</td></tr>
+            <tr><td><span class="hindi">यह</span> (Yah)</td><td><span class="hindi">इस</span> (Is)</td><td>is</td><td><span class="hindi">इस में</span> (Is men - En esto)</td></tr>
+            <tr><td><span class="hindi">वह</span> (Vah)</td><td><span class="hindi">उस</span> (Us)</td><td>us</td><td><span class="hindi">उस को</span> (Us ko - A él/ella)</td></tr>
+            <tr><td><span class="hindi">ये</span> (Ye)</td><td><span class="hindi">इन</span> (In)</td><td>in</td><td><span class="hindi">इन को</span> (In ko - A estos)</td></tr>
+            <tr><td><span class="hindi">वे</span> (Ve)</td><td><span class="hindi">उन</span> (Un)</td><td>un</td><td><span class="hindi">उन में</span> (Un men - En aquellos)</td></tr>
+            <tr><td colspan="3"><strong>No cambian:</strong> <span class="hindi">तुम</span> (Tum), <span class="hindi">आप</span> (Āp), <span class="hindi">हम</span> (Ham) ya tienen una forma robusta y no necesitan cambiar.</td></tr>
+        </tbody>
+    </table>
+
+    <h4>B. Sustantivos en Oblicuo (Singular):</h4>
+    <ul>
+        <li>Sustantivos <strong>Masculinos</strong> que terminan en <span class="hindi">-आ</span> (-aa): Cambian su terminación a <span class="hindi">-ए</span> (-e).
+            <ul>
+                <li><span class="hindi">लड़का</span> (chico) -> <span class="hindi">लड़के को</span> (laRke ko - Al chico)</li>
+                <li><span class="hindi">कमरा</span> (habitación) -> <span class="hindi">कमरे में</span> (kamre men - En la habitación)</li>
+            </ul>
+        </li>
+        <li><strong>Todos los demás sustantivos</strong> (Femeninos, y Masculinos que no terminan en -aa): <strong>No cambian</strong> en singular oblicuo.
+            <ul>
+                <li><span class="hindi">घर</span> (casa) -> <span class="hindi">घर में</span> (ghar men - En la casa)</li>
+                <li><span class="hindi">किताब</span> (libro) -> <span class="hindi">किताब पर</span> (kitaab par - Sobre el libro)</li>
+                <li><span class="hindi">लड़की</span> (chica) -> <span class="hindi">लड़की को</span> (laRkii ko - A la chica)</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h3>5. Grupos Consonánticos (Conjuntos)</h3>
+    <p>Cuando un 'halant' (<span class="hindi">क्</span>) se une a otra consonante (<span class="hindi">य</span>), se fusionan visualmente para formar una ligadura.</p>
+    <ul>
+        <li><span class="hindi">क् (k) + य (ya) = क्य (kya)</span>. Ejemplo: <span class="hindi">क्या</span> (kyā)</li>
+        <li><span class="hindi">स् (s) + त (ta) = स्त (sta)</span>. Ejemplo: <span class="hindi">नमस्ते</span> (namaste)</li>
+    </ul>
+
+    <!-- UNIDAD 4: CONTENIDO AMPLIADO -->
+    <h2>Unidad 4: Presente Simple (Habitual)</h2>
+    <p>Este tiempo verbal, también llamado Presente Indefinido, se usa para describir acciones habituales ("Yo como arroz", "Él lee libros") o verdades universales ("El sol sale por el este").</p>
+    <ul>
+        <li><strong>Estructura:</strong> Raíz del Verbo + <span class="hindi">ता</span> (taa) / <span class="hindi">ती</span> (tii) / <span class="hindi">ते</span> (te) + Verbo 'Ser' (<span class="hindi">होना</span>) conjugado.</li>
+        <li><strong>Concordancia:</strong> La partícula <span class="hindi">ता/ती/ते</span> concuerda en GÉNERO y NÚMERO con el <strong>SUJETO</strong>.</li>
+    </ul>
+    <div class="clarificacion">
+        <h4>Nota del Profesor: ¿Por qué concuerda el verbo?</h4>
+        <p>En el presente simple, la partícula <span class="hindi">ता/ती/ते</span> funciona como un adjetivo que describe al sujeto. Igual que decimos <span class="hindi">अच्छा लड़का</span> (chico bueno) y <span class="hindi">अच्छी लड़की</span> (chica buena), decimos <span class="hindi">लड़का जाता है</span> (el chico que va) y <span class="hindi">लड़की जाती है</span> (la chica que va). El verbo está, en esencia, describiendo una cualidad o hábito del sujeto.</p>
+    </div>
+    <table>
+        <thead>
+            <tr><th>Sujeto</th><th>Forma Verbal (verbo <span class="hindi">जाना</span> - jānā - ir)</th><th>Transliteración</th><th>Ejemplo Completo</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Masc. Singular</strong><br>(<span class="hindi">मैं, तू, यह, वह</span>)</td><td><span class="hindi">जाता</span> (jaataa) + (<span class="hindi">हूँ/है</span>)</td><td>jātā</td><td><span class="hindi">मैं जाता हूँ।</span> (Main jaataa huun. - Yo voy.)</td></tr>
+            <tr><td><strong>Fem. Singular</strong><br>(<span class="hindi">मैं, तू, यह, वह</span>)</td><td><span class="hindi">जाती</span> (jaatii) + (<span class="hindi">हूँ/है</span>)</td><td>jātī</td><td><span class="hindi">मैं जाती हूँ।</span> (Main jaatii huun. - Yo voy.)</td></tr>
+            <tr><td><strong>Masc. Plural</strong><br>(<span class="hindi">हम, तुम, आप, ये, वे</span>)</td><td><span class="hindi">जाते</span> (jaate) + (<span class="hindi">हो/हैं</span>)</td><td>jāte</td><td><span class="hindi">हम जाते हैं।</span> (Ham jaate hain. - Nosotros vamos.)<br><span class="hindi">आप जाते हैं।</span> (Āp jaate hain. - Usted va.)</td></tr>
+            <tr><td><strong>Fem. Plural</strong><br>(<span class="hindi">हम, तुम, आप, ये, वे</span>)</td><td><span class="hindi">जातीं / जाती</span> (jaatiin / jaatii) + (<span class="hindi">हो/हैं</span>)</td><td>jāti̱ / jātī</td><td><span class="hindi">हम जाती हैं।</span> (Ham jaatii hain. - Nosotras vamos.)</td></tr>
+        </tbody>
+    </table>
+    
+    <h3>5. Negación y Preguntas</h3>
+    <ul>
+        <li><strong>Negación:</strong> Se usa <span class="hindi">नहीं</span> (nahin) justo <strong>antes</strong> del grupo verbal (antes de <span class="hindi">जाता/जाती/जाते</span>).
+            <ul><li><em>Afirmativo:</em> <span class="hindi">आप हिन्दी बोलते हैं।</span> (Āp hindi bolte hain.) - Usted habla hindi.</li><li><em>Negativo:</em> <span class="hindi">आप हिन्दी नहीं बोलते हैं।</span> (Āp hindi nahin bolte hain.) - Usted no habla hindi.</li></ul>
+        </li>
+        <li><strong>Preguntas (Sí/No):</strong> Se añade <span class="hindi">क्या</span> (kyā) al <strong>inicio</strong> de la frase. No cambia el orden de las palabras.
+            <ul><li><span class="hindi">क्या आप हिन्दी बोलते हैं?</span> (Kyā āp hindi bolte hain?) - ¿Habla usted hindi?</li></ul>
+        </li>
+    </ul>
+
+    <!-- UNIDAD 5: CONTENIDO AMPLIADO -->
+    <h2>Unidad 5: Presente Continuo</h2>
+    <p>Describe una acción que está sucediendo <strong>AHORA MISMO</strong> ("Estoy comiendo", "Ella está leyendo").</p>
+    <ul>
+        <li><strong>Estructura:</strong> Raíz del Verbo + <span class="hindi">रहा</span> (rahaa) / <span class="hindi">रही</span> (rahii) / <span class="hindi">रहे</span> (rahe) + Verbo 'Ser' (<span class="hindi">होना</span>) conjugado.</li>
+        <li><strong>Concordancia:</strong> De nuevo, la partícula <span class="hindi">रहा/रही/रहे</span> concuerda en GÉNERO y NÚMERO con el <strong>SUJETO</strong>.</li>
+    </ul>
+    <div class="nota">
+        <h4>Presente Simple vs. Presente Continuo</h4>
+        <p><span class="hindi">मैं हिंदी बोलता हूँ।</span> (main hindi boltaa huun) -> "Hablo hindi" (es mi habilidad, una acción habitual).</p>
+        <p><span class="hindi">मैं हिंदी बोल रहा हूँ।</span> (main hindi bol rahaa huun) -> "Estoy hablando hindi" (lo estoy haciendo en este preciso momento).</p>
+    </div>
+    <table>
+        <thead>
+            <tr><th>Sujeto</th><th>Forma Verbal (verbo <span class="hindi">खाना</span> - khānā - comer)</th><th>Transliteración</th><th>Ejemplo Completo</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Masc. Singular</strong></td><td><span class="hindi">खा रहा</span> (khaa rahaa) + (<span class="hindi">हूँ/है</span>)</td><td>khā rahā</td><td><span class="hindi">मैं खा रहा हूँ।</span> (Main khaa rahaa huun. - Estoy comiendo.)</td></tr>
+            <tr><td><strong>Fem. Singular</strong></td><td><span class="hindi">खा रही</span> (khaa rahii) + (<span class="hindi">हूँ/है</span>)</td><td>khā rahī</td><td><span class="hindi">वह खा रही है।</span> (Vah khaa rahii hai. - Ella está comiendo.)</td></tr>
+            <tr><td><strong>Masc. Plural</strong></td><td><span class="hindi">खा रहे</span> (khaa rahe) + (<span class="hindi">हो/हैं</span>)</td><td>khā rahe</td><td><span class="hindi">आप खा रहे हैं।</span> (Āp khaa rahe hain. - Uds. están comiendo.)</td></tr>
+            <tr><td><strong>Fem. Plural</strong></td><td><span class="hindi">खा रहीं</span> (khaa rahiin) + (<span class="hindi">हो/हैं</span>)</td><td>khā rahi̱</td><td><span class="hindi">हम खा रहीं हैं।</span> (Ham khaa rahiin hain. - Nosotras estamos comiendo.)</td></tr>
+        </tbody>
+    </table>
+    <h3>6. Postposición 'ko' (<span class="hindi">को</span>) con Objeto Directo</h3>
+    <p>Normalmente, el objeto directo no lleva postposición. Sin embargo, se usa <span class="hindi">को</span> (ko) después de un objeto directo si este es <strong>específico y animado</strong> (generalmente personas).</p>
+    <ul>
+        <li><em>General:</em> <span class="hindi">मैं एक लड़की देखता हूँ।</span> (Main ek laRkii dekhtaa huun.) - Veo una chica (cualquiera).</li>
+        <li><em>Específico:</em> <span class="hindi">मैं उस लड़की को देखता हूँ।</span> (Main us laRkii ko dekhtaa huun.) - Veo a esa chica (a una chica en particular).</li>
+    </ul>
+
+    <!-- UNIDAD 6: CONTENIDO AMPLIADO -->
+    <h2>Unidad 6: Posesión (<span class="hindi">का/के/की</span>) y Plurales</h2>
+    
+    <h3>1. Posesión con 'kā/ke/kī' (<span class="hindi">का/के/की</span>)</h3>
+    <p>Es la postposición "de" para indicar posesión. Es fundamental entender que, a diferencia del español, <strong>concuerda con el objeto poseído</strong> (lo que viene después), no con el poseedor. Se usa principalmente para relaciones, partes del cuerpo y atributos inherentes.</p>
+    <ul>
+        <li><span class="hindi">का</span> (kā): Se usa si el objeto poseído es <strong>Masculino Singular</strong>.
+            <ul><li><span class="hindi">राम का घर</span> (Ram kaa ghar) - La casa (m) de Ram.</li></ul>
+        </li>
+        <li><span class="hindi">की</span> (kī): Se usa si el objeto poseído es <strong>Femenino (singular O plural)</strong>.
+            <ul>
+                <li><span class="hindi">राम की किताब</span> (Ram kii kitaab) - El libro (f) de Ram.</li>
+                <li><span class="hindi">राम की किताबें</span> (Ram kii kitaaben) - Los libros (f pl) de Ram.</li>
+            </ul>
+        </li>
+        <li><span class="hindi">के</span> (ke): Se usa si el objeto poseído es <strong>Masculino Plural</strong> O si el objeto está en <strong>Caso Oblicuo</strong> (seguido de otra postposición).
+            <ul>
+                <li><span class="hindi">राम के बेटे</span> (Ram ke beTe) - Los hijos (m pl) de Ram.</li>
+                <li><span class="hindi">राम के घर में</span> (Ram ke ghar men) - En la casa (m, oblicuo) de Ram.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="nota">
+        <h4>Posesión de Objetos Tangibles con 'ke pās' (के पास)</h4>
+        <p>Para expresar la posesión de objetos que se pueden tener, coger o intercambiar (dinero, libros, coches, etc.), se prefiere la construcción <strong>[Poseedor en oblicuo] + के पास (ke pās)</strong>. Literalmente significa "cerca de".</p>
+        <p><strong>Estructura:</strong> [Poseedor] + <span class="hindi">के पास</span> + [Objeto] + <span class="hindi">है/हैं</span>.</p>
+        <ul>
+            <li><span class="hindi">मेरे पास एक गाड़ी है।</span> (Mere paas ek gaaRii hai.) - Tengo un coche.</li>
+            <li><span class="hindi">उसके पास पैसे हैं।</span> (Uske paas paise hain.) - Él/Ella tiene dinero.</li>
+            <li><strong>Contraste:</strong> <span class="hindi">राम का भाई</span> (La relación es inherente) vs. <span class="hindi">राम के पास किताब है</span> (El libro es un objeto externo).</li>
+        </ul>
+    </div>
+
+    <h3>2. Plurales de Sustantivos</h3>
+    <p>Las reglas para formar el plural dependen del género y la terminación del sustantivo en singular.</p>
+    <table>
+        <thead><tr><th>Género y Terminación</th><th>Regla (Nominativo)</th><th>Singular (Ej)</th><th>Plural (Ej)</th></tr></thead>
+        <tbody>
+            <tr><td>Masc. <span class="hindi">-आ</span> (ā)</td><td>Cambia a <span class="hindi">-ए</span> (e)</td><td><span class="hindi">लड़का</span> (laRkaa)</td><td><span class="hindi">लड़के</span> (laRke) - chicos</td></tr>
+            <tr><td>Masc. (otros)</td><td>No cambia</td><td><span class="hindi">घर</span> (ghar)</td><td><span class="hindi">घर</span> (ghar) - casas</td></tr>
+            <tr><td>Fem. <span class="hindi">-ई</span> (ī)</td><td>Cambia a <span class="hindi">-इयाँ</span> (iyaan)</td><td><span class="hindi">लड़की</span> (laRkii)</td><td><span class="hindi">लड़कियाँ</span> (laRkiyaan) - chicas</td></tr>
+            <tr><td>Fem. <span class="hindi">-आ</span> (ā)</td><td>Añade <span class="hindi">-एँ</span> (en)</td><td><span class="hindi">माता</span> (maataa)</td><td><span class="hindi">माताएँ</span> (maataaen) - madres</td></tr>
+            <tr><td>Fem. (otros)</td><td>Añade <span class="hindi">-एँ</span> (en)</td><td><span class="hindi">बहन</span> (bahan)</td><td><span class="hindi">बहनें</span> (bahanen) - hermanas</td></tr>
+        </tbody>
+    </table>
+
+    <h3>3. Concordancia de Adjetivos (Plural)</h3>
+    <p>Los adjetivos que terminan en <span class="hindi">-आ</span> (ā) (como <span class="hindi">अच्छा</span>) también cambian para concordar en plural.</p>
+    <ul>
+        <li><strong>Masc. Plural:</strong> la <span class="hindi">-आ</span> (ā) cambia a <span class="hindi">-ए</span> (e) -> <span class="hindi">अच्छे लड़के</span> (achchhe laRke - chicos buenos)</li>
+        <li><strong>Fem. (Sing/Plural):</strong> la <span class="hindi">-आ</span> (ā) cambia a <span class="hindi">-ई</span> (ī) -> <span class="hindi">अच्छी लड़की / अच्छी लड़कियाँ</span> (achchhii laRkii / achchhii laRkiyaan - chica buena / chicas buenas)</li>
+    </ul>
+
+    <!-- UNIDAD 7: CONTENIDO AMPLIADO -->
+    <h2>Unidad 7: Imperativo y 'Chāhie'</h2>
+    
+    <h3>1. Imperativo (Órdenes y Peticiones)</h3>
+    <p>La forma del verbo en imperativo cambia según la formalidad del pronombre al que te diriges.</p>
+    <table>
+        <thead><tr><th>Pronombre</th><th>Regla</th><th>Verbo (Ej: <span class="hindi">करना</span> - karnā)</th><th>Transliteración</th><th>Uso y Nivel de Formalidad</th></tr></thead>
+        <tbody>
+            <tr><td><span class="hindi">तू</span> (Tū)</td><td>Raíz del Verbo</td><td><span class="hindi">कर</span> (kar) - ¡Haz!</td><td>kar</td><td>Muy informal, íntimo. Para niños o relaciones muy cercanas.</td></tr>
+            <tr><td><span class="hindi">तुम</span> (Tum)</td><td>Raíz + <span class="hindi">-ओ</span> (-o)</td><td><span class="hindi">करो</span> (karo) - Haz / Haced.</td><td>karo</td><td>Informal estándar. El más común entre amigos y familia.</td></tr>
+            <tr><td><span class="hindi">आप</span> (Āp)</td><td>Raíz + <span class="hindi">-इये / -इए</span> (-iye)</td><td><span class="hindi">करिये / कीजिए</span> (kariye / kiijiye)</td><td>kariye / kījiye</td><td>Formal, respetuoso. Para extraños, mayores, etc.</td></tr>
+        </tbody>
+    </table>
+    <div class="nota">
+        <h4>Nota sobre Imperativos Irregulares con <span class="hindi">आप</span></h4>
+        <p>Cuatro verbos muy comunes tienen una forma irregular y muy usada con <span class="hindi">आप</span> que es preferible memorizar:</p>
+        <ul>
+            <li><span class="hindi">करना</span> (karnā - hacer) -> <span class="hindi">कीजिए</span> (kījiye)</li>
+            <li><span class="hindi">देना</span> (denā - dar) -> <span class="hindi">दीजिए</span> (dījiye)</li>
+            <li><span class="hindi">लेना</span> (lenā - tomar) -> <span class="hindi">लीजिए</span> (lījiye)</li>
+            <li><span class="hindi">पीना</span> (pīnā - beber) -> <span class="hindi">पीजिए</span> (pījiye)</li>
+        </ul>
+    </div>
+
+    <h3>2. 'Chāhie' (<span class="hindi">चाहिए</span>) - Querer / Deber / Necesitar</h3>
+    <p>Esta es una estructura muy útil pero impersonal. El "sujeto" (quien quiere o necesita) no va en nominativo, sino en <strong>Caso Oblicuo</strong> con la postposición <span class="hindi">को</span>.</p>
+    <p><strong>Estructura:</strong> [Persona + <span class="hindi">को</span>] + [Objeto] + <span class="hindi">चाहिए</span>.</p>
+    <ul>
+        <li><strong>Para expresar necesidad/deseo de un objeto:</strong>
+            <ul>
+                <li><span class="hindi">मुझको पानी चाहिए।</span> (Mujhko paanii chahie.) - (A mí agua es necesaria) -> Quiero/Necesito agua.</li>
+                <li><span class="hindi">राम को किताब चाहिए।</span> (Ram ko kitaab chahie.) - Ram necesita un libro.</li>
+            </ul>
+        </li>
+        <li><strong>Para expresar "debería" (consejo):</strong>
+            <ul>
+                <li><span class="hindi">आपको जाना चाहिए।</span> (Āpko jānā chahie.) - Usted debería ir.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>3. Pronombres Interrogativos</h3>
+    <p>Los pronombres interrogativos se utilizan para formular preguntas. A continuación se presentan los más comunes:</p>
+    <ul>
+        <li><span class="hindi">क्या</span> (kyā) - ¿Qué? / ¿Es...? (para preguntas de sí/no)</li>
+        <li><span class="hindi">कौन</span> (kaun) - ¿Quién?</li>
+        <li><span class="hindi">कहाँ</span> (kahā̃) - ¿Dónde?</li>
+        <li><span class="hindi">कब</span> (kab) - ¿Cuándo?</li>
+        <li><span class="hindi">कैसे</span> (kaise) - ¿Cómo?</li>
+        <li><span class="hindi">क्यों</span> (kyon) - ¿Por qué?</li>
+        <li><span class="hindi">कितना/कितनी/कितने</span> (kitnā/kitnī/kitne) - ¿Cuánto/cuánta/cuántos?</li>
+    </ul>
+
+    <!-- UNIDAD 8: CONTENIDO AMPLIADO -->
+    <h2>Unidad 8: Modales y Futuro</h2>
+    
+    <h3>1. Verbo Modal: 'Saknā' (<span class="hindi">सकना</span>) - Poder</h3>
+    <p>Se usa con la raíz de otro verbo para indicar <strong>habilidad</strong> (poder hacer algo) o <strong>permiso</strong> (tener autorización para hacer algo).</p>
+    <ul>
+        <li><strong>Estructura:</strong> Raíz del Verbo Principal + <span class="hindi">सकना</span> (conjugado en el tiempo que corresponda).</li>
+        <li><span class="hindi">सकना</span> se conjuga como un verbo normal terminado en <span class="hindi">-आ</span>. En presente simple, sus formas son <span class="hindi">सकता हूँ/है, सकती हूँ/है, सकते हो/हैं, सकती हो/हैं</span>.</li>
+    </ul>
+    <ul>
+        <li><em>Habilidad:</em> <span class="hindi">मैं हिन्दी बोल सकता हूँ।</span> (Main hindi bol saktaa huun.) - Yo puedo hablar hindi.</li>
+        <li><em>Permiso:</em> <span class="hindi">क्या तुम आ सकते हो?</span> (Kyaa tum ā sakte ho?) - ¿Puedes venir?</li>
+    </ul>
+
+    <h3>2. Futuro Simple</h3>
+    <p>Describe una acción que ocurrirá en el futuro. Es una conjugación directa que se añade a la raíz del verbo.</p>
+    <p><strong>Estructura:</strong> Raíz del Verbo + Terminación de futuro.</p>
+    <table>
+        <thead><tr><th>Pronombre</th><th>Terminación Masc.</th><th>Terminación Fem.</th><th>Ejemplo (Verbo <span class="hindi">जाना</span> - jānā - ir)</th></tr></thead>
+        <tbody>
+            <tr><td><span class="hindi">मैं</span> (Main)</td><td><span class="hindi">-ऊँगा</span> (-uungaa)</td><td><span class="hindi">-ऊँगी</span> (-uungii)</td><td><span class="hindi">मैं जाऊँगा।</span> (Main jāū̃gā - Iré)</td></tr>
+            <tr><td><span class="hindi">तू</span> (Tu)</td><td><span class="hindi">-एगा</span> (-egaa)</td><td><span class="hindi">-एगी</span> (-egii)</td><td><span class="hindi">तू जाएगा।</span> (Tū jāegā - Irás)</td></tr>
+            <tr><td><span class="hindi">तुम</span> (Tum)</td><td><span class="hindi">-ओगे</span> (-oge)</td><td><span class="hindi">-ओगी</span> (-ogii)</td><td><span class="hindi">तुम जाओगे।</span> (Tum jāoge - Irás)</td></tr>
+            <tr><td><span class="hindi">आप</span> (Āp)</td><td><span class="hindi">-एँगे</span> (-enge)</td><td><span class="hindi">-एँगी</span> (-engii)</td><td><span class="hindi">आप जाएँगे।</span> (Āp jāenge - Irá/n)</td></tr>
+            <tr><td><span class="hindi">यह/वह</span> (Yah/Vah)</td><td><span class="hindi">-एगा</span> (-egaa)</td><td><span class="hindi">-एगी</span> (-egii)</td><td><span class="hindi">वह जाएगी।</span> (Vah jāegī - Ella irá)</td></tr>
+            <tr><td><span class="hindi">हम</span> (Ham)</td><td><span class="hindi">-एँगे</span> (-enge)</td><td><span class="hindi">-एँगी</span> (-engii)</td><td><span class="hindi">हम जाएँगे।</span> (Ham jāenge - Iremos)</td></tr>
+            <tr><td><span class="hindi">ये/वे</span> (Ye/Ve)</td><td><span class="hindi">-एँगे</span> (-enge)</td><td><span class="hindi">-एँगी</span> (-engii)</td><td><span class="hindi">वे जाएँगे।</span> (Ve jāenge - Irán)</td></tr>
+        </tbody>
+    </table>
+
+    <h3>3. Adverbios de Frecuencia</h3>
+    <p>Los adverbios de frecuencia indican con qué frecuencia ocurre una acción. Algunos ejemplos comunes son:</p>
+    <ul>
+        <li><span class="hindi">हमेशा</span> (hameshā) - Siempre</li>
+        <li><span class="hindi">कभी-कभी</span> (kabhī-kabhī) - A veces</li>
+        <li><span class="hindi">रोज़</span> (roz) - Todos los días / Cada día</li>
+        <li><span class="hindi">अक्सर</span> (aksar) - A menudo / Frecuentemente</li>
+    </ul>
+
+    <!-- UNIDAD 9: CONTENIDO AMPLIADO -->
+    <h2>Unidad 9: Pretérito Perfecto y Caso Ergativo (<span class="hindi">ने</span>)</h2>
+    <p>Este es el concepto gramatical más complejo y crucial del Nivel A1.</p>
+    
+    <h3>1. El Caso Ergativo (<span class="hindi">ने</span> - ne)</h3>
+    <div class="regla-oro">
+        <h4>Regla de Oro del Ergativo</h4>
+        <p>El sujeto de una oración usa la postposición <span class="hindi">ने</span> (ne) si se cumplen <strong>DOS</strong> condiciones a la vez:</p>
+        <ol>
+            <li>El verbo es <strong>TRANSITIVO</strong> (un verbo que necesita un objeto directo, como comer, leer, ver, comprar, escribir...).</li>
+            <li>El tiempo verbal es <strong>PERFECTO</strong> (como el Pretérito Perfecto o el Pasado Simple, que veremos después).</li>
+        </ol>
+        <p><strong>Verbos Intransitivos</strong> (ir, venir, dormir, reír...) <strong>NUNCA</strong> usan <span class="hindi">ने</span>.</p>
+    </div>
+
+    <h3>2. Pretérito Perfecto (Present Perfect)</h3>
+    <p>Describe una acción completada en el pasado, pero conectada al presente ("He comido", "Ella ha llegado"). Se forma con el <strong>Participio Pasado</strong> + el verbo 'Ser' (<span class="hindi">होना</span>) en presente.</p>
+
+    <h4>A. Verbos Intransitivos (No usan <span class="hindi">ने</span>)</h4>
+    <p>El verbo concuerda con el Sujeto (como siempre).</p>
+    <ul>
+        <li><strong>Formación del Participio Pasado:</strong>
+            <ul>
+                <li>Masc. Sing: <span class="hindi">-आ</span> (-ā). Ej: <span class="hindi">जाना -> गया</span> (jānā → gayā - fue)</li>
+                <li>Masc. Plural: <span class="hindi">-ए</span> (-e). Ej: <span class="hindi">जाना -> गए</span> (jānā → gaye - fueron)</li>
+                <li>Fem. (Sing/Plural): <span class="hindi">-ई</span> (-ī). Ej: <span class="hindi">जाना -> गई</span> (jānā → gayī - fue/fueron)</li>
+            </ul>
+        </li>
+        <li><strong>Ejemplos (Verbo <span class="hindi">आना</span> - ānā - venir):</strong>
+            <ul>
+                <li>Yo (hombre) he venido. -> <span class="hindi">मैं आया हूँ।</span> (Main āyā hū̃.)</li>
+                <li>Ella ha venido. -> <span class="hindi">वह आई है।</span> (Vah āyī hai.)</li>
+                <li>Ellos han venido. -> <span class="hindi">वे आए हैं।</span> (Ve āye ha̱.)</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>B. Verbos Transitivos (¡Usan <span class="hindi">ने</span>!)</h4>
+    <div class="clarificacion">
+        <h4>La Gran Consecuencia de <span class="hindi">ने</span></h4>
+        <p>Cuando el sujeto usa <span class="hindi">ने</span>, el verbo <strong>DEJA</strong> de concordar con el sujeto. El verbo pasa a concordar con el <strong>OBJETO DIRECTO</strong> en género y número.</p>
+        <p><strong>Analogía:</strong> Piensa que el sujeto se pone un "casco" (<span class="hindi">ने</span>) y se aparta. Ya no "pilota" el verbo. Ahora, el objeto directo toma el volante y el verbo le obedece ciegamente.</p>
+    </div>
+    <p><strong>Estructura:</strong> Sujeto + <span class="hindi">ने</span> (ne) + Objeto + Verbo (Participio Pasado + <span class="hindi">होना</span> concordando con el Objeto)</p>
+    
+    <p><strong>Ejemplos (Verbo <span class="hindi">खाना</span> - khānā - comer; Objeto: <span class="hindi">केला</span> - plátano (m)):</strong></p>
+    <ul>
+        <li>Ram ha comido un plátano.<br><span class="hindi">राम ने (Sujeto+ne) केला (Objeto, m. sing) खाया है (Verbo, m. sing)।</span> (Rām ne kelā khāyā hai.)</li>
+        <li>Sita ha comido un plátano.<br><span class="hindi">सीता ने (Sujeto+ne) केला (Objeto, m. sing) खाया है (Verbo, m. sing)।</span> (Sītā ne kelā khāyā hai.) -> ¡El verbo no cambia!</li>
+    </ul>
+
+    <p><strong>Ejemplos (Verbo <span class="hindi">खाना</span> - khānā - comer; Objeto: <span class="hindi">रोटी</span> - pan (f)):</strong></p>
+    <ul>
+        <li>Ram ha comido pan.<br><span class="hindi">राम ने (Sujeto+ne) रोटी (Objeto, f. sing) खाई है (Verbo, f. sing)।</span> (Rām ne roṭī khāyī hai.)</li>
+    </ul>
+
+    <p><strong>Excepción a la concordancia: el objeto con <span class="hindi">को</span></strong></p>
+    <p>Si el Objeto Directo es específico/animado y lleva la postposición <span class="hindi">को</span>, el verbo ya no puede concordar con él. En este caso, el verbo queda en su forma por defecto: <strong>Masculino Singular</strong>.</p>
+    <ul>
+        <li>Ram ha visto a Sita. -> <span class="hindi">राम ने सीता को देखा है।</span> (Rām ne sītā ko dekhā hai.)</li>
+    </ul>
+
+    <!-- UNIDAD 10: CONTENIDO AMPLIADO -->
+    <h2>Unidad 10: Pretérito Imperfecto (Habitual)</h2>
+    <p>Describe acciones habituales o estados en el pasado ("Yo comía", "Él solía leer", "Ella era..."). Es el tiempo pasado más fácil y directo.</p>
+    
+    <h3>1. Verbo 'Ser' en Pasado (<span class="hindi">था, थी, थे, थीं</span>)</h3>
+    <p>Primero, necesitas conocer la forma pasada del verbo <span class="hindi">होना</span> (ser/estar), que concuerda en género y número con el sujeto.</p>
+    <table>
+        <thead><tr><th>Forma</th><th>Transliteración</th><th>Uso</th><th>Ejemplo</th></tr></thead>
+        <tbody>
+            <tr><td><span class="hindi">था</span></td><td>thā</td><td>Masculino Singular</td><td><span class="hindi">मैं ठीक था।</span> (Main ṭhīk thā.) - Yo estaba bien.</td></tr>
+            <tr><td><span class="hindi">थी</span></td><td>thī</td><td>Femenino Singular</td><td><span class="hindi">वह अध्यापिका थी।</span> (Vah adhyaapikā thī.) - Ella era profesora.</td></tr>
+            <tr><td><span class="hindi">थे</span></td><td>the</td><td>Masculino Plural</td><td><span class="hindi">हम घर में थे।</span> (Ham ghar men the.) - Nosotros estábamos en casa.</td></tr>
+            <tr><td><span class="hindi">थीं</span></td><td>thī̱</td><td>Femenino Plural</td><td><span class="hindi">वे डॉक्टर थीं।</span> (Ve ḍōkṭar thī̱.) - Ellas eran doctoras.</td></tr>
+        </tbody>
+    </table>
+
+    <h3>2. Pretérito Imperfecto</h3>
+    <p>La estructura es idéntica al Presente Simple (Unidad 4), pero cambiando el verbo 'ser' (honā) del presente al pasado (<span class="hindi">thā/thī/the/thī̱</span>).</p>
+    <p><strong>Estructura:</strong> Raíz del Verbo + <span class="hindi">ता/ती/ते</span> + <span class="hindi">था/थी/थे/थीं</span></p>
+    <div class="regla-oro">
+        <h4>Regla de Oro del Imperfecto</h4>
+        <p>La concordancia es siempre con el <strong>SUJETO</strong>. Este tiempo verbal <strong>NUNCA</strong> usa el caso ergativo <span class="hindi">ने</span> (ne).</p>
+    </div>
+    <ul>
+        <li>Yo (hombre) vivía en Delhi. -> <span class="hindi">मैं दिल्ली में रहता था।</span> (Main dillī men rahaṫhā.)</li>
+        <li>Ella vivía en Delhi. -> <span class="hindi">वह दिल्ली में रहती थी।</span> (Vah dillī men rahaṫhī.)</li>
+        <li>Ellos vivían en Delhi. -> <span class="hindi">वे दिल्ली में रहते थे।</span> (Ve dillī men rahaṫhe.)</li>
+        <li>Nosotras vivíamos en Delhi. -> <span class="hindi">हम दिल्ली में रहती थीं।</span> (Ham dillī men rahaṫhī̱.)</li>
+    </ul>
+
+    <!-- UNIDAD 11: CONTENIDO AMPLIADO -->
+    <h2>Unidad 11: Pretérito Simple</h2>
+    <p>Describe una acción completada y puntual en el pasado ("Comí", "Ella vino", "Lo hice"). Es idéntico al Pretérito Perfecto (Unidad 9), simplemente <strong>eliminando</strong> el verbo 'ser' (<span class="hindi">honā</span>) del final.</p>
+
+    <h3>1. Verbos Intransitivos (Sin <span class="hindi">ने</span>)</h3>
+    <p>La concordancia es con el <strong>Sujeto</strong>.</p>
+    <ul>
+        <li>Yo (hombre) vine. -> <span class="hindi">मैं आया।</span> (Main āyā.)</li>
+        <li>Ella vino. -> <span class="hindi">वह आई।</span> (Vah āyī.)</li>
+    </ul>
+
+    <h3>2. Verbos Transitivos (¡Con <span class="hindi">ने</span>!)</h3>
+    <p>La concordancia es con el <strong>Objeto</strong>, exactamente igual que en el Pretérito Perfecto.</p>
+    <ul>
+        <li>Ram comió un plátano. -> <span class="hindi">राम ने केला खाया।</span> (Rām ne kelā khāyā.)</li>
+        <li>Sita comió pan. -> <span class="hindi">सीता ने रोटी खाई।</span> (Sītā ne roṭī khāyī.)</li>
+    </ul>
+
+    <h3>3. Conectores y Frases Subordinadas</h3>
+    <p>Los conectores permiten unir ideas y construir frases más complejas:</p>
+    <ul>
+        <li><span class="hindi">और</span> (aur) - y</li>
+        <li><span class="hindi">लेकिन</span> (lekin) - pero</li>
+        <li><span class="hindi">क्योंकि</span> (kyonki) - porque</li>
+        <li><span class="hindi">इसलिए</span> (isliye) - por eso, por lo tanto</li>
+    </ul>
+    <p>Las frases subordinadas se pueden formar usando <span class="hindi">कि</span> (ki), equivalente a "que" en español.</p>
+    <ul>
+        <li><span class="hindi">मुझे लगता है कि...</span> (mujhe lagtā hai ki...) - Creo que...</li>
+        <li><span class="hindi">मेरे विचार में कि...</span> (mere vichār men ki...) - En mi opinión que...</li>
+    </ul>
+
+    <h3>4. Comparación de Tiempos Pasados</h3>
+    <div class="clarificacion">
+        <h4>Entendiendo los Pasados</h4>
+        <p>Esta tabla es clave para diferenciar el matiz de cada tiempo pasado.</p>
+    </div>
+    <table>
+        <thead><tr><th>Tiempo</th><th>Ejemplo (Hindi)</th><th>Transliteración</th><th>Traducción y Matiz</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Imperfecto</strong> (Habitual)</td><td><span class="hindi">मैं जाता था।</span></td><td>main jātā thā</td><td>Yo solía ir / Yo iba. (Una acción repetida o un estado en el pasado).</td></tr>
+            <tr><td><strong>Perfecto</strong> (Completado + Relevante)</td><td><span class="hindi">मैं गया हूँ।</span></td><td>main gayā hū̃</td><td>Yo he ido. (La acción está completa pero tiene relevancia en el presente).</td></tr>
+            <tr><td><strong>Simple</strong> (Completado)</td><td><span class="hindi">मैं गया।</span></td><td>main gayā</td><td>Yo fui. (La acción está completa y se ve como un evento puntual en el pasado).</td></tr>
+        </tbody>
+    </table>
+
+    <!-- UNIDAD 12: CONTENIDO AMPLIADO -->
+    <h2>Unidad 12: Consolidación A1</h2>
+    <p>Esta unidad final se centra en repasar y combinar todos los conceptos anteriores para afianzar la base del nivel A1.</p>
+    <h3>1. Repaso General de Conceptos</h3>
+    <ul>
+        <li><strong>Tiempos Verbales:</strong>
+            <ul>
+                <li>Presente Simple (para hábitos).</li>
+                <li>Presente Continuo (para acciones en progreso).</li>
+                <li>Futuro (para acciones futuras).</li>
+                <li>Pasados (Imperfecto para hábitos pasados, Perfecto y Simple para acciones completadas).</li>
+            </ul>
+        </li>
+        <li><strong>Casos Gramaticales:</strong>
+            <ul>
+                <li><strong>Oblicuo:</strong> La forma que adoptan nombres y pronombres antes de una postposición (<span class="hindi">में, पर, को...</span>).</li>
+                <li><strong>Ergativo (<span class="hindi">ने</span>):</strong> Usado por el sujeto con verbos transitivos en tiempos perfectos/pasados.</li>
+            </ul>
+        </li>
+        <li><strong>Verbos Modales y Estructuras:</strong>
+            <ul>
+                <li><span class="hindi">सकना</span> (saknā): para indicar poder o permiso.</li>
+                <li><span class="hindi">चाहिए</span> (chāhie): para indicar necesidad, deseo o deber (con la estructura de sujeto <span class="hindi">को</span>).</li>
+            </ul>
+        </li>
+        <li><strong>Conectores Clave:</strong>
+            <ul>
+                <li><span class="hindi">और</span> (aur) - y</li>
+                <li><span class="hindi">लेकिन</span> (lekin) - pero</li>
+                <li><span class="hindi">क्योंकि</span> (kyonki) - porque</li>
+                <li><span class="hindi">इस लिए</span> (is liye) - por eso, por lo tanto</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Tabla Maestra de Pronombres (Referencia Rápida)</h2>
+    <p>Esta tabla, extraída de 'Mis Apuntes de Hindi', consolida las formas pronominales más importantes en sus diferentes casos.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Pronombre</th>
+                <th>Caso Directo (Sujeto)</th>
+                <th>Transliteración</th>
+                <th>Ergativo (+ ने)</th>
+                <th>Transliteración</th>
+                <th>Oblicuo</th>
+                <th>Transliteración</th>
+                <th>Dativo (+ को)</th>
+                <th>Transliteración</th>
+                <th>Genitivo/Posesivo (kā/ke/kī)</th>
+                <th>Transliteración</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>मैं</strong> (yo)</td>
+                <td>मैं</td>
+                <td>main</td>
+                <td>मैंने</td>
+                <td>mainne</td>
+                <td>मुझ</td>
+                <td>mujh</td>
+                <td>मुझे / मुझको</td>
+                <td>mujhe / mujhko</td>
+                <td>मेरा / मेरी / मेरे</td>
+                <td>merā / merī / mere</td>
+            </tr>
+            <tr>
+                <td><strong>तू</strong> (tú, inf.)</td>
+                <td>तू</td>
+                <td>tū</td>
+                <td>तूने</td>
+                <td>tūne</td>
+                <td>तुझ</td>
+                <td>tujh</td>
+                <td>तुझे / तुझको</td>
+                <td>tujhe / tujhko</td>
+                <td>तेरा / तेरी / तेरे</td>
+                <td>terā / terī / tere</td>
+            </tr>
+            <tr>
+                <td><strong>तुम</strong> (tú)</td>
+                <td>तुम</td>
+                <td>tum</td>
+                <td>तुमने</td>
+                <td>tumne</td>
+                <td>तुम</td>
+                <td>tum</td>
+                <td>तुम्हें / तुमको</td>
+                <td>tumhe̱ / tumko</td>
+                <td>तुम्हारा / तुम्हारी / तुम्हारे</td>
+                <td>tumhārā / tumhārī / tumhāre</td>
+            </tr>
+            <tr>
+                <td><strong>आप</strong> (usted)</td>
+                <td>आप</td>
+                <td>āp</td>
+                <td>आपने</td>
+                <td>āpne</td>
+                <td>आप</td>
+                <td>āp</td>
+                <td>आपको</td>
+                <td>āpko</td>
+                <td>आपका / आपकी / आपके</td>
+                <td>āpkā / āpki / āpke</td>
+            </tr>
+            <tr>
+                <td><strong>यह</strong> (él/ella, este)</td>
+                <td>यह</td>
+                <td>yah</td>
+                <td>इसने</td>
+                <td>isne</td>
+                <td>इस</td>
+                <td>is</td>
+                <td>इसे / इसको</td>
+                <td>ise / isko</td>
+                <td>इसका / इसकी / इसके</td>
+                <td>iska / iskī / iske</td>
+            </tr>
+            <tr>
+                <td><strong>वह</strong> (él/ella, ese)</td>
+                <td>वह</td>
+                <td>vah</td>
+                <td>उसने</td>
+                <td>usne</td>
+                <td>उस</td>
+                <td>us</td>
+                <td>उसे / उसको</td>
+                <td>use / usko</td>
+                <td>उसका / उसकी / उसके</td>
+                <td>uskā / uskī / uske</td>
+            </tr>
+            <tr>
+                <td><strong>हम</strong> (nosotros)</td>
+                <td>हम</td>
+                <td>ham</td>
+                <td>हमने</td>
+                <td>hamne</td>
+                <td>हम</td>
+                <td>ham</td>
+                <td>हमें / हमको</td>
+                <td>hame̱ / hamko</td>
+                <td>हमारा / हमारी / हमारे</td>
+                <td>hamārā / hamārī / hamāre</td>
+            </tr>
+            <tr>
+                <td><strong>ये</strong> (ellos/as, estos)</td>
+                <td>ये</td>
+                <td>ye</td>
+                <td>इन्होंने</td>
+                <td>inhōne</td>
+                <td>इन</td>
+                <td>in</td>
+                <td>इन्हें / इनको</td>
+                <td>inhẽ / inko</td>
+                <td>इनका / इनकी / इनके</td>
+                <td>inkā / inki / inke</td>
+            </tr>
+            <tr>
+                <td><strong>वे</strong> (ellos/as, esos)</td>
+                <td>वे</td>
+                <td>ve</td>
+                <td>उन्होंने</td>
+                <td>unhone</td>
+                <td>उन</td>
+                <td>un</td>
+                <td>उन्हें / उनको</td>
+                <td>unhe̱ / unko</td>
+                <td>उनका / उनकी / उनके</td>
+                <td>unkā / unki / unke</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
