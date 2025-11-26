@@ -1,0 +1,1 @@
+import{j as t}from"./index-DU9j_mGt.js";import{T as s}from"./TestMcqTemplate-CSgEBgXp.js";/* empty css                 */const e=[],m=()=>t.jsx(s,{questions:e,title:"Unidad 9: Test A"});export{m as default};
