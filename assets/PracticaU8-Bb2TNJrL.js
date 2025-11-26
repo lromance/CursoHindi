@@ -1,0 +1,1 @@
+import{j as t}from"./index-D4Xk_Ld9.js";import{T as r}from"./PracticeTemplate-DHzvaBpI.js";/* empty css                 */const s=[],e=()=>t.jsx(r,{questions:s,title:"Unidad 8: Práctica Final"});export{e as default};
