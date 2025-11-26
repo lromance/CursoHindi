@@ -8,8 +8,7 @@ const Navbar = () => {
         <div className="nav-links">
           <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Inicio</NavLink>
           <NavLink to="/programacion" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Programa</NavLink>
-          <NavLink to="/gramatica" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Gramática</NavLink>
-          <NavLink to="/vocabulario" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Vocabulario</NavLink>
+          <NavLink to="/curso" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Curso Completo</NavLink>
           <NavLink to="/practicas" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Prácticas</NavLink>
         </div>
       </div>

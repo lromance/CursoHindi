@@ -2,12 +2,12 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createHashRouter, RouterProvider } from 'react-router-dom';
 
+import './index.css'; // <--- ADD THIS LINE
 
 import App from './App';
 import HomePage from './pages/HomePage';
 import ProgramPage from './pages/ProgramPage';
-import GrammarPage from './pages/GrammarPage';
-import VocabularyPage from './pages/VocabularyPage';
+import CoursePage from './pages/CoursePage';
 import PracticesPage from './pages/PracticesPage';
 import PracticeDetailPage from './pages/PracticeDetailPage';
 
@@ -18,10 +18,9 @@ const router = createHashRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: "programacion", element: <ProgramPage /> },
-      { path: "gramatica", element: <GrammarPage /> },
-      { path: "vocabulario", element: <VocabularyPage /> },
+      { path: "curso", element: <CoursePage /> },
       { path: "practicas", element: <PracticesPage /> },
-      { path: "practicas/:practiceId", element: <PracticeDetailPage /> }, // Using :practiceId for future scalability
+      { path: "practicas/:practiceId", element: <PracticeDetailPage /> },
     ],
   },
 ]);
