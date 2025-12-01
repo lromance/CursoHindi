@@ -220,13 +220,13 @@
     <!-- Fake Navbar to match React App -->
     <nav class="navbar">
         <div class="navbar-content">
-            <a href="/#" class="navbar-brand">Curso de Hindi</a>
+            <a href="../../#/" class="navbar-brand">Curso de Hindi</a>
             <div class="nav-links">
-                <a href="/#/" class="nav-link">Inicio</a>
-                <a href="/#/programacion" class="nav-link">Programa</a>
-                <a href="/#/curso" class="nav-link">Curso Completo</a>
-                <a href="/#/practicas" class="nav-link">Prácticas</a>
-                <a href="/#/herramientas" class="nav-link active">Herramientas</a>
+                <a href="../../#/" class="nav-link">Inicio</a>
+                <a href="../../#/programacion" class="nav-link">Programa</a>
+                <a href="../../#/curso" class="nav-link">Curso Completo</a>
+                <a href="../../#/practicas" class="nav-link">Prácticas</a>
+                <a href="../../#/herramientas" class="nav-link active">Herramientas</a>
             </div>
         </div>
     </nav>
@@ -257,6 +257,13 @@
             <div class="score-board">
                 <span>Pregunta: <span id="current-q">1</span>/<span id="total-q">5</span></span>
                 <span>Puntos: <span id="score">0</span></span>
+            </div>
+
+            <!-- Added Back to Review Button -->
+            <div style="text-align: left; margin-bottom: 1rem;">
+                <button onclick="showSummary()" class="btn"
+                    style="background-color: #7f8c8d; padding: 0.5rem 1rem; font-size: 0.9rem; color: white; border: none; border-radius: 5px; cursor: pointer;">&larr;
+                    Repasar Vocabulario</button>
             </div>
 
             <div class="visual-area" id="visual-area">
