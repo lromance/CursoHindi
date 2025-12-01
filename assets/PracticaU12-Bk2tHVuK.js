@@ -1,0 +1,1 @@
+import{j as t}from"./index-G4Tivz22.js";import{T as r}from"./PracticeTemplate-BcVTDwgm.js";/* empty css                 */const s=[],e=()=>t.jsx(r,{questions:s,title:"Unidad 12: Práctica Final"});export{e as default};
