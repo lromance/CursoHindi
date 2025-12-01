@@ -212,219 +212,202 @@
         .summary-table tr:hover {
             background-color: #f5f5f5;
         }
-    </style>
-</head>
 
-<body>
+        <p>Estudia estas posiciones antes de empezar el juego.</p><table class="summary-table"><thead><tr><th>Hindi</th><th>Transliteración</th><th>Español</th></tr></thead><tbody id="vocab-list">< !-- Vocab inserted by JS --></tbody></table><button id="start-btn" class="btn nav-btn">¡Empezar Juego !</button></div><div class="game-container" id="game-view" style="display: none;"><div class="score-board"><span>Pregunta: <span id="current-q">1</span>/<span id="total-q">5</span></span><span>Puntos: <span id="score">0</span></span></div>< !-- Added Back to Review Button --><div style="text-align: left; margin-bottom: 1rem;"><button onclick="showSummary()" class="btn"
+        style="background-color: #7f8c8d; padding: 0.5rem 1rem; font-size: 0.9rem; color: white; border: none; border-radius: 5px; cursor: pointer;">&larr;
+        Repasar Vocabulario</button></div><div class="visual-area" id="visual-area"><div class="box">CAJA</div><div class="ball"></div></div><h3 id="instruction">¿Dónde está la bola?</h3><div class="options-grid" id="options-container">< !-- Options will be injected here --></div><div class="feedback" id="feedback"></div><button id="next-btn" class="btn nav-btn" style="display: none;">Siguiente &rarr;
 
-    <!-- Fake Navbar to match React App -->
-    <nav class="navbar">
-        <div class="navbar-content">
-            <a href="../../#/" class="navbar-brand">Curso de Hindi</a>
-            <div class="nav-links">
-                <a href="../../#/" class="nav-link">Inicio</a>
-                <a href="../../#/programacion" class="nav-link">Programa</a>
-                <a href="../../#/curso" class="nav-link">Curso Completo</a>
-                <a href="../../#/practicas" class="nav-link">Prácticas</a>
-                <a href="../../#/herramientas" class="nav-link active">Herramientas</a>
-            </div>
-        </div>
-    </nav>
+        </button><button id="restart-btn" class="btn nav-btn" style="display: none;">Volver al Repaso ↺</button></div></main><script>const questions=[ {
+            id: 'ke-upar', answer: 'के ऊपर', translit: 'ke ūpar', meaning: 'Encima de'
+        }
 
-    <main>
-        <div class="game-container" id="study-view">
-            <h1>Adverbios de Posición</h1>
-            <h2>Repaso de Vocabulario</h2>
-            <p>Estudia estas posiciones antes de empezar el juego.</p>
+        ,
+        {
+        id: 'ke-niche', answer: 'के नीचे', translit: 'ke nīche', meaning: 'Debajo de'
+        }
 
-            <table class="summary-table">
-                <thead>
-                    <tr>
-                        <th>Hindi</th>
-                        <th>Transliteración</th>
-                        <th>Español</th>
-                    </tr>
-                </thead>
-                <tbody id="vocab-list">
-                    <!-- Vocab inserted by JS -->
-                </tbody>
-            </table>
+        ,
+        {
+        id: 'ke-andar', answer: 'के अंदर', translit: 'ke andar', meaning: 'Dentro de'
+        }
 
-            <button id="start-btn" class="btn nav-btn">¡Empezar Juego!</button>
-        </div>
+        ,
+        {
+        id: 'ke-bahar', answer: 'के बाहर', translit: 'ke bāhar', meaning: 'Fuera de'
+        }
 
-        <div class="game-container" id="game-view" style="display: none;">
-            <div class="score-board">
-                <span>Pregunta: <span id="current-q">1</span>/<span id="total-q">5</span></span>
-                <span>Puntos: <span id="score">0</span></span>
-            </div>
+        ,
+        {
+        id: 'ke-samne', answer: 'के सामने', translit: 'ke sāmne', meaning: 'En frente de'
+        }
 
-            <!-- Added Back to Review Button -->
-            <div style="text-align: left; margin-bottom: 1rem;">
-                <button onclick="showSummary()" class="btn"
-                    style="background-color: #7f8c8d; padding: 0.5rem 1rem; font-size: 0.9rem; color: white; border: none; border-radius: 5px; cursor: pointer;">&larr;
-                    Repasar Vocabulario</button>
-            </div>
+        ,
+        {
+        id: 'ke-piche', answer: 'के पीछे', translit: 'ke pīche', meaning: 'Detrás de'
+        }
 
-            <div class="visual-area" id="visual-area">
-                <div class="box">CAJA</div>
-                <div class="ball"></div>
-            </div>
+        ,
+        {
+        id: 'ke-pas', answer: 'के पास', translit: 'ke pās', meaning: 'Cerca de'
+        }
 
-            <h3 id="instruction">¿Dónde está la bola?</h3>
+        ,
+        {
+        id: 'se-dur', answer: 'से दूर', translit: 'se dūr', meaning: 'Lejos de'
+        }
 
-            <div class="options-grid" id="options-container">
-                <!-- Options will be injected here -->
-            </div>
-
-            <div class="feedback" id="feedback"></div>
-
-            <button id="next-btn" class="btn nav-btn" style="display: none;">Siguiente &rarr;</button>
-            <button id="restart-btn" class="btn nav-btn" style="display: none;">Volver al Repaso ↺</button>
-        </div>
-    </main>
-
-    <script>
-        const questions = [
-            { id: 'ke-upar', answer: 'के ऊपर', translit: 'ke ūpar', meaning: 'Encima de' },
-            { id: 'ke-niche', answer: 'के नीचे', translit: 'ke nīche', meaning: 'Debajo de' },
-            { id: 'ke-andar', answer: 'के अंदर', translit: 'ke andar', meaning: 'Dentro de' },
-            { id: 'ke-bahar', answer: 'के बाहर', translit: 'ke bāhar', meaning: 'Fuera de' },
-            { id: 'ke-samne', answer: 'के सामने', translit: 'ke sāmne', meaning: 'En frente de' },
-            { id: 'ke-piche', answer: 'के पीछे', translit: 'ke pīche', meaning: 'Detrás de' },
-            { id: 'ke-pas', answer: 'के पास', translit: 'ke pās', meaning: 'Cerca de' },
-            { id: 'se-dur', answer: 'से दूर', translit: 'se dūr', meaning: 'Lejos de' }
         ];
 
-        let currentQuestionIndex = 0;
-        let score = 0;
-        let shuffledQuestions = [];
+        let currentQuestionIndex=0;
+        let score=0;
+        let shuffledQuestions=[];
 
-        const studyView = document.getElementById('study-view');
-        const gameView = document.getElementById('game-view');
-        const vocabList = document.getElementById('vocab-list');
-        const startBtn = document.getElementById('start-btn');
+        const studyView=document.getElementById('study-view');
+        const gameView=document.getElementById('game-view');
+        const vocabList=document.getElementById('vocab-list');
+        const startBtn=document.getElementById('start-btn');
 
-        const visualArea = document.getElementById('visual-area');
-        const optionsContainer = document.getElementById('options-container');
-        const feedbackEl = document.getElementById('feedback');
-        const nextBtn = document.getElementById('next-btn');
-        const restartBtn = document.getElementById('restart-btn');
-        const currentQEl = document.getElementById('current-q');
-        const totalQEl = document.getElementById('total-q');
-        const scoreEl = document.getElementById('score');
+        const visualArea=document.getElementById('visual-area');
+        const optionsContainer=document.getElementById('options-container');
+        const feedbackEl=document.getElementById('feedback');
+        const nextBtn=document.getElementById('next-btn');
+        const restartBtn=document.getElementById('restart-btn');
+        const currentQEl=document.getElementById('current-q');
+        const totalQEl=document.getElementById('total-q');
+        const scoreEl=document.getElementById('score');
 
         // Populate Summary Table
         function loadSummary() {
-            vocabList.innerHTML = '';
-            questions.forEach(q => {
-                const tr = document.createElement('tr');
-                tr.innerHTML = `
-                    <td class="hindi-text" style="font-size: 1.2em;">${q.answer}</td>
-                    <td>${q.translit}</td>
-                    <td>${q.meaning}</td>
-                `;
-                vocabList.appendChild(tr);
-            });
+            vocabList.innerHTML='';
+
+            questions.forEach(q=> {
+                    const tr=document.createElement('tr');
+
+                    tr.innerHTML=` <td class="hindi-text" style="font-size: 1.2em;" >$ {
+                        q.answer
+                    }
+
+                    </td> <td>$ {
+                        q.translit
+                    }
+
+                    </td> <td>$ {
+                        q.meaning
+                    }
+
+                    </td> `;
+                    vocabList.appendChild(tr);
+                });
         }
 
         function showGame() {
-            studyView.style.display = 'none';
-            gameView.style.display = 'block';
+            studyView.style.display='none';
+            gameView.style.display='block';
             initGame();
         }
 
         function showSummary() {
-            gameView.style.display = 'none';
-            studyView.style.display = 'block';
+            gameView.style.display='none';
+            studyView.style.display='block';
         }
 
         function initGame() {
             // Shuffle questions and pick 5 unique ones
-            shuffledQuestions = [...questions];
-            shuffledQuestions.sort(() => Math.random() - 0.5);
-            shuffledQuestions = shuffledQuestions.slice(0, 5);
+            shuffledQuestions=[...questions];
+            shuffledQuestions.sort(()=> Math.random() - 0.5);
+            shuffledQuestions=shuffledQuestions.slice(0, 5);
 
-            currentQuestionIndex = 0;
-            score = 0;
-            scoreEl.textContent = score;
-            totalQEl.textContent = shuffledQuestions.length;
+            currentQuestionIndex=0;
+            score=0;
+            scoreEl.textContent=score;
+            totalQEl.textContent=shuffledQuestions.length;
 
-            restartBtn.style.display = 'none';
+            restartBtn.style.display='none';
             loadQuestion();
         }
 
         function loadQuestion() {
-            const q = shuffledQuestions[currentQuestionIndex];
-            currentQEl.textContent = currentQuestionIndex + 1;
+            const q=shuffledQuestions[currentQuestionIndex];
+            currentQEl.textContent=currentQuestionIndex+1;
 
             // Reset UI
-            visualArea.className = 'visual-area scenario-' + q.id;
-            optionsContainer.innerHTML = '';
-            feedbackEl.textContent = '';
-            feedbackEl.className = 'feedback';
-            nextBtn.style.display = 'none';
+            visualArea.className='visual-area scenario-'+q.id;
+            optionsContainer.innerHTML='';
+            feedbackEl.textContent='';
+            feedbackEl.className='feedback';
+            nextBtn.style.display='none';
 
             // Generate options (1 correct + 3 distractors)
-            let options = [q];
-            const distractors = questions.filter(item => item.id !== q.id);
+            let options=[q];
+            const distractors=questions.filter(item=> item.id !==q.id);
             // Shuffle distractors and take 3
-            distractors.sort(() => Math.random() - 0.5);
-            options = options.concat(distractors.slice(0, 3));
+            distractors.sort(()=> Math.random() - 0.5);
+            options=options.concat(distractors.slice(0, 3));
             // Shuffle options
-            options.sort(() => Math.random() - 0.5);
+            options.sort(()=> Math.random() - 0.5);
 
-            options.forEach(opt => {
-                const btn = document.createElement('button');
-                btn.className = 'option-btn hindi-text';
-                btn.innerHTML = `<strong>${opt.answer}</strong><br><small style="font-family: var(--font-main); font-size: 0.8em;">(${opt.translit})</small>`;
-                btn.onclick = () => checkAnswer(opt, q, btn);
-                optionsContainer.appendChild(btn);
-            });
+            options.forEach(opt=> {
+                    const btn=document.createElement('button');
+                    btn.className='option-btn hindi-text';
+
+                    btn.innerHTML=`<strong>$ {
+                        opt.answer
+                    }
+
+                    </strong><br><small style="font-family: var(--font-main); font-size: 0.8em;" >($ {
+                            opt.translit
+                        })</small>`;
+                    btn.onclick=()=> checkAnswer(opt, q, btn);
+                    optionsContainer.appendChild(btn);
+                });
         }
 
         function checkAnswer(selected, correct, btnElement) {
             // Disable all buttons
-            const buttons = optionsContainer.querySelectorAll('button');
-            buttons.forEach(b => b.disabled = true);
+            const buttons=optionsContainer.querySelectorAll('button');
+            buttons.forEach(b=> b.disabled=true);
 
-            if (selected.id === correct.id) {
+            if (selected.id===correct.id) {
                 btnElement.classList.add('correct');
-                feedbackEl.textContent = '¡Correcto! ' + correct.meaning;
-                feedbackEl.style.color = 'var(--secondary-color)';
+                feedbackEl.textContent='¡Correcto! '+correct.meaning;
+                feedbackEl.style.color='var(--secondary-color)';
                 score++;
-                scoreEl.textContent = score;
-            } else {
+                scoreEl.textContent=score;
+            }
+
+            else {
                 btnElement.classList.add('incorrect');
-                feedbackEl.textContent = 'Incorrecto. La respuesta era: ' + correct.answer + ' (' + correct.meaning + ')';
-                feedbackEl.style.color = '#dc3545';
+                feedbackEl.textContent='Incorrecto. La respuesta era: '+correct.answer+' ('+correct.meaning+')';
+                feedbackEl.style.color='#dc3545';
+
                 // Highlight correct answer
-                buttons.forEach(b => {
-                    if (b.innerHTML.includes(correct.answer)) {
-                        b.classList.add('correct');
-                    }
-                });
+                buttons.forEach(b=> {
+                        if (b.innerHTML.includes(correct.answer)) {
+                            b.classList.add('correct');
+                        }
+                    });
             }
 
             if (currentQuestionIndex < shuffledQuestions.length - 1) {
-                nextBtn.style.display = 'inline-block';
-            } else {
-                restartBtn.style.display = 'inline-block';
-                feedbackEl.textContent += ' - ¡Juego Terminado!';
+                nextBtn.style.display='inline-block';
+            }
+
+            else {
+                restartBtn.style.display='inline-block';
+                feedbackEl.textContent+=' - ¡Juego Terminado!';
             }
         }
 
-        nextBtn.onclick = () => {
+        nextBtn.onclick=()=> {
             currentQuestionIndex++;
             loadQuestion();
-        };
+        }
 
-        restartBtn.onclick = showSummary;
-        startBtn.onclick = showGame;
+        ;
+
+        restartBtn.onclick=showSummary;
+        startBtn.onclick=showGame;
 
         // Start
         loadSummary();
-    </script>
-</body>
-
-</html>
+        </script></body></html>
