@@ -10,6 +10,7 @@ import ProgramPage from './pages/ProgramPage';
 import CoursePage from './pages/CoursePage';
 import PracticesPage from './pages/PracticesPage';
 import PracticeDetailPage from './pages/PracticeDetailPage';
+import ToolsPage from './pages/ToolsPage';
 
 const router = createHashRouter([
   {
@@ -21,6 +22,7 @@ const router = createHashRouter([
       { path: "curso", element: <CoursePage /> },
       { path: "practicas", element: <PracticesPage /> },
       { path: "practicas/:practiceId", element: <PracticeDetailPage /> },
+      { path: "herramientas", element: <ToolsPage /> },
     ],
   },
 ]);

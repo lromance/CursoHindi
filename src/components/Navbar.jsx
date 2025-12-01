@@ -10,6 +10,7 @@ const Navbar = () => {
           <NavLink to="/programacion" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Programa</NavLink>
           <NavLink to="/curso" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Curso Completo</NavLink>
           <NavLink to="/practicas" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Prácticas</NavLink>
+          <NavLink to="/herramientas" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Herramientas</NavLink>
         </div>
       </div>
     </nav>
