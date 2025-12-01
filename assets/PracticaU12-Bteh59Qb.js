@@ -1,1 +1,0 @@
-import{j as t}from"./index-DU9j_mGt.js";import{T as r}from"./PracticeTemplate-Da_00q25.js";/* empty css                 */const s=[],e=()=>t.jsx(r,{questions:s,title:"Unidad 12: Práctica Final"});export{e as default};
